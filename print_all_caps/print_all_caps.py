@@ -6,6 +6,8 @@ Input: Juan Dela Cruz
 Output: JUAN DELA CRUZ
 """
 
-#Ask the user to input a name
-#Convert name to all uppercase
+#Ask the user to input a name and Convert name to all uppercase
+name = input("Enter Name: ").upper()
+
 #print name
+print(name)
