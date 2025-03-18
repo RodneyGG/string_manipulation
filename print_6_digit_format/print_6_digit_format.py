@@ -14,12 +14,24 @@ def valid_num(msg):
         else:     
             return None
     except ValueError:
-        print
+        print("Invalid Input")
+
+def ask_quit():
+    while True:
+        ask_user = input("Do you wish to exit the program? (Y/N)").lower().strip()
+        if ask_user in ("y", "yes"):
+            return False
+        elif ask_user in ("n", "no"):
+            return True
+        else:
+            print("Invalid Input")
 
 
-while True:
+try_again = True
+
+while try_again:
     #Ask the user to input a number 
-    num = valid_num("Enter a number")
+    num = valid_num("Enter a number(0-1000): ")
     
     if num is None:
         print("This program only accept Whole numbers")
@@ -27,4 +39,6 @@ while True:
         #convert the number into 6 digit format and print the number
         print(f"{num:06}")
     else:
-        print("Invalid Input")
+        print("Enter numbers from 0 to 1000 Only")
+        
+    try_again = ask_quit()
