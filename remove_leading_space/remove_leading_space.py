@@ -6,6 +6,7 @@ Input:         Juan Dela Cruz
 Output: Juan Dela Cruz
 """
 
-#Enter the name
-#Remove the leading spaces
+#Enter the name and Remove the leading spaces
+name = input("Enter Name: ").strip()
 #print name
+print(name)
