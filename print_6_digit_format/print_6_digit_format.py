@@ -7,5 +7,7 @@ Output: 000143
 """
 
 #Ask the user to input a number 
-#convert the number into 6 digit format
-#print the number
+num = int(input("Enter a number")).strip()
+#convert the number into 6 digit format and print the number
+print(f"{num:06}")
+
