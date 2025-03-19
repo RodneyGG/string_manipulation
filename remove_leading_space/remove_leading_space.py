@@ -12,7 +12,7 @@ def valid_name(msg):
         #Make sure the name has a First and Last Name. 
         #Also accepts names like Shaquille O'neal
         if len(name) >= 3 and " " in name and \
-            all(char.isalpha() or char in ["'", " ","."] for char in name):
+            all(char.isalpha() or char in ["'", " ", "."] for char in name):
             return name
         else:
             print("Invalid Name")
