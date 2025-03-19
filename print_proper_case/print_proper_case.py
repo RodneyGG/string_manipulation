@@ -13,11 +13,26 @@ def valid_name(msg):
             return name
         else:
             print("Invalid Input")
+            
+def ask_quit():
+    while True:
+        ask_user = input("Do you wish to exit the program? (Y/N)").strip().lower()
+        if ask_user in ("y", "yes"):
+            return False
+        elif ask_user in ("n", "no"):
+            return True
+        else:
+            print("Invalid Input")
 
+try_again = True
 
-#ask the user to input theri fullname in incorrect casing
-name = valid_name("Enter Name in incorrect casing(jUAn DEla CrUZ):  ")
-#Convert in proper casing
-correct_casing = name.title()
-#print name
-print(correct_casing)
+while try_again:
+    #ask the user to input theri fullname in incorrect casing
+    name = valid_name("Enter Name in incorrect casing(jUAn DEla CrUZ):  ")
+    #Convert in proper casing
+    correct_casing = name.title()
+    #print name
+    print(correct_casing)
+    
+    #ask user to quit
+    try_again = ask_quit()
