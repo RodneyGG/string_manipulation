@@ -6,7 +6,17 @@ Input: Juan Dela Cruz
 Output: juan dela cruz
 """
 
-#Ask the user to input a name and convert it to lowercase
-name = input("Enter Name: ").strip().lower()
+def valid_name(msg):
+    while True:
+        #convert it to lowercase
+        name = input(msg).strip().lower()
+        if len(name) >= 3 and " " in name \
+            and all(char.isalpha() or char in [".", "'", " "] for char in name):
+            return name
+        else:
+            print("Invalid Name")
+
+#Ask the user to input a name 
+name = valid_name("Enter Name: ")
 #print name
 print(name)
