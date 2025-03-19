@@ -9,8 +9,8 @@ Output: JUAN DELA CRUZ
 def valid_name(msg):
     while True:
         name = input(msg)
-        if len(name) >= 3 and " " in name and \
-            all(char.isalpha() or char in ["'", " ", "."] for char in name):
+        if len(name) >= 3 and " " in name \
+            and all(char.isalpha() or char in ["'", " ", "."] for char in name):
             return name
         else:
             print("Invalid Name")
