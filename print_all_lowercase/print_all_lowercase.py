@@ -6,6 +6,7 @@ Input: Juan Dela Cruz
 Output: juan dela cruz
 """
 
-#Ask the user to input a name 
-#convert it to lowercase
+#Ask the user to input a name and convert it to lowercase
+name = input("Enter Name: ").strip().lower()
 #print name
+print(name)
