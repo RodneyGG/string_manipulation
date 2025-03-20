@@ -6,6 +6,11 @@ Input: We will weather the weather whatever the weather whether we like it or no
 Output: 14
 """
 
-#Ask the user to input a sentence
-#count the words in the sentence
-#print the number of words in the sentence
+
+
+#Ask the user to input a word/s
+words = input("Enter a word/s: ")
+#count the words in the word/s
+count_word = words.split()
+#print the number of words in the word/s
+print(len(count_word))
