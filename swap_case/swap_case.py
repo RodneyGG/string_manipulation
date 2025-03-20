@@ -6,8 +6,19 @@ Input: jUAn DEla CrUZ
 Output: JuaN deLA cRuz
 """
 
+def valid_name(msg):
+    while True:
+        name = input(msg).strip()
+        if len(name) >= 3 and " " in name and all(char.isalpha() \
+            or char in ["'", ".", " "] for char in name):
+            return name
+        else:
+            print("Enter Valid Name")
+
+
+
 #Ask the user to enter a name
-name = input("Enter Name: ")
+name = valid_name("Enter Name: ")
 #Convert in reverse casing
 reversed_name = name.swapcase()
 #print reverse case name
