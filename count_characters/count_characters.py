@@ -7,5 +7,8 @@ Output: 14
 """
 
 #ask the user to enter their full name
+name = input("Enter your Name: ")
 #count the characters in name
+count_characters = len(name)
 #print the count
+print(count_characters)
