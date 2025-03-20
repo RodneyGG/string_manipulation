@@ -39,7 +39,7 @@ while try_again:
     
     #print name in pascal case
     for word in pascal_case:
-        print(word, end= "")
+        print(word, end="")
     
     #ask user to quit
     try_again = ask_quit()
