@@ -19,7 +19,7 @@ def valid_name(msg):
 #ask user to quit
 def ask_quit():
     while True:
-        ask_user = input("Do you wish to exit the program? (Y/N)").lower().strip()
+        ask_user = input("\nDo you wish to exit the program? (Y/N)").lower().strip()
         if ask_user in ("y", "yes"):
             return 0
         elif ask_user in ("n", "no"):
