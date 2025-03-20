@@ -13,6 +13,8 @@ snake_case = []
 for name in full_name.split():
     snake_case.append(name.lower())
 #print the name in the snake case
-for word in snake_case:
-    print(word, end= "_")
-
+for i in range(len(snake_case)):
+    if i == len(snake_case) - 1: 
+        print(snake_case[i], end="")
+    else:
+        print(snake_case[i], end="_")
